@@ -2,8 +2,8 @@ const
      n=5;
      z=2;
 type worker_info = record
-     Fn:string[100];     //ФИО;
-     day : byte; //День недели
+     Fn:string[100];
+     day : byte;
      k : array [1..7] of integer; 
      sum_k:integer;
      max_k:integer;
