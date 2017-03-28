@@ -11,6 +11,8 @@ var
     toys:array[1..n] of toy;
     i:integer;
 begin
+    Assign(input,'input.txt');  //Открытие файла ввода
+    Assign(output,'output.txt');  //Открытие файла вывода
     for i:=1 to n do   //Ввод информации об ассортименте игрушек
         begin
             readln(toys[i].name);
@@ -26,4 +28,13 @@ begin
             writeln('Количество : ',toys[i].number);
             writeln('Возрастные границы : ',toys[i].x,'%',toys[i].y);
         end;
+    CloseFile(input);
+    CloseFile(output);
 end.
+
+//В файле input.txt введи :
+//Игрушка
+//500
+//10
+//2
+//8
