@@ -21,7 +21,7 @@ begin
         end;
     for i:=1 to n do
         begin
-            //writeln('Название : ',toys[i].name);'
+            writeln('Название : ',toys[i].name);
             writeln('Цена : ',toys[i].price);
             writeln('Количество : ',toys[i].number);
             writeln('Возрастные границы : ',toys[i].x,'%',toys[i].y);
